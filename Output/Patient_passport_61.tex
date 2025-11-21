@@ -1,0 +1,409 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{sectsty}
+\sectionfont{\vspace{-6pt}}
+\renewcommand{\thesection}{\arabic{section}}
+\setlength{\parskip}{-6pt}
+\usepackage{titlesec}
+\setmainfont{Arial}
+\usepackage{framed}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\renewcommand{\UrlFont}{\color{blue}\underline}
+\definecolor{color0}{HTML}{ffffff}
+\definecolor{color1}{HTML}{e0e0e0}
+\definecolor{color2}{HTML}{70c47c}
+\definecolor{color3}{HTML}{98cc7c}
+\definecolor{color4}{HTML}{f4ce7e}
+\definecolor{color5}{HTML}{f4ce7e}
+\definecolor{color6}{HTML}{FC986C}
+\definecolor{color7}{HTML}{fc7c6c}
+\definecolor{grey1}{HTML}{e1e3e1}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{colortbl}
+\usepackage{nicematrix}
+\usepackage{makecell}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{longtable}
+\definecolor{shadecolor}{rgb}{0.9,0.9,0.9}
+\setlength{\headheight}{72.98643pt}
+\addtolength{\topmargin}{-30.98643pt}
+\pagestyle{fancy}
+\setstretch{1.5}
+\fancyhead[R]{\includegraphics[width=4.0cm]{logo.png}}
+\setlength{\footskip}{0.5cm}
+\usepackage{framed}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\definecolor{Abnormal_motor_development__ever__color_indi}{HTML}{278591}
+\definecolor{Abnormal_motor_development__ever__color_other}{HTML}{278591}
+\definecolor{Motor_skills_difficulties_color_indi}{HTML}{FFFFFF}
+\definecolor{Motor_skills_difficulties_color_other}{HTML}{4D9BA5}
+\definecolor{Abnormal_muscle_tone_unusually_floppy__ever__color_indi}{HTML}{FFFFFF}
+\definecolor{Abnormal_muscle_tone_unusually_floppy__ever__color_other}{HTML}{5DA3AC}
+\definecolor{Hypertonia_color_indi}{HTML}{D0E5E7}
+\definecolor{Hypertonia_color_other}{HTML}{D0E5E7}
+\definecolor{Hypotonia_color_indi}{HTML}{4D9BA5}
+\definecolor{Hypotonia_color_other}{HTML}{4D9BA5}
+\definecolor{Microcephaly_color_indi}{HTML}{FFFFFF}
+\definecolor{Microcephaly_color_other}{HTML}{CBE2E4}
+\definecolor{Short_stature_color_indi}{HTML}{FFFFFF}
+\definecolor{Short_stature_color_other}{HTML}{CEE3E6}
+\definecolor{Weakness_color_indi}{HTML}{FFFFFF}
+\definecolor{Weakness_color_other}{HTML}{B2D3D7}
+\definecolor{Scoliosis_color_indi}{HTML}{FFFFFF}
+\definecolor{Scoliosis_color_other}{HTML}{CBE2E4}
+\definecolor{Seizures__ever__color_indi}{HTML}{9AC6CC}
+\definecolor{Seizures__ever__color_other}{HTML}{9AC6CC}
+\definecolor{Cardiac_abnormalities__ever__color_indi}{HTML}{AACFD3}
+\definecolor{Cardiac_abnormalities__ever__color_other}{HTML}{AACFD3}
+\definecolor{Congenital_heart_defect__ever__color_indi}{HTML}{95C3C9}
+\definecolor{Congenital_heart_defect__ever__color_other}{HTML}{95C3C9}
+\definecolor{Pulmonary_hypertension_color_indi}{HTML}{FFFFFF}
+\definecolor{Pulmonary_hypertension_color_other}{HTML}{F4F9F9}
+\definecolor{Intellectual_disability_color_indi}{HTML}{5DA3AC}
+\definecolor{Intellectual_disability_color_other}{HTML}{5DA3AC}
+\definecolor{Autism_color_indi}{HTML}{FFFFFF}
+\definecolor{Autism_color_other}{HTML}{A0C9CE}
+\definecolor{Repetitive_behaviors_or_gestures_such_as_hand_flapping_or_rocking_color_indi}{HTML}{77B2B9}
+\definecolor{Repetitive_behaviors_or_gestures_such_as_hand_flapping_or_rocking_color_other}{HTML}{77B2B9}
+\definecolor{Abnormally_active_or_aggressive_color_indi}{HTML}{90C0C6}
+\definecolor{Abnormally_active_or_aggressive_color_other}{HTML}{90C0C6}
+\definecolor{Self_injurious_behavior_such_as_head_banging_color_indi}{HTML}{FFFFFF}
+\definecolor{Self_injurious_behavior_such_as_head_banging_color_other}{HTML}{AFD2D6}
+\definecolor{Does_not_point_make_meaningful_gestures_or_imitate_color_indi}{HTML}{58A1AA}
+\definecolor{Does_not_point_make_meaningful_gestures_or_imitate_color_other}{HTML}{58A1AA}
+\definecolor{Does_not_initiate_or_rarely_initiates_social_interaction_color_indi}{HTML}{FFFFFF}
+\definecolor{Does_not_initiate_or_rarely_initiates_social_interaction_color_other}{HTML}{AFD2D6}
+\definecolor{Overly_focused_on_objects_or_self_minimal_interest_color_indi}{HTML}{FFFFFF}
+\definecolor{Overly_focused_on_objects_or_self_minimal_interest_color_other}{HTML}{C6DFE2}
+\definecolor{Unusually_intense_or_obsessive_interest_in_certain_topics_or_toys_color_indi}{HTML}{FFFFFF}
+\definecolor{Unusually_intense_or_obsessive_interest_in_certain_topics_or_toys_color_other}{HTML}{A5CCD1}
+\definecolor{Language_delay_delayed_or_abnormal_babbling_color_indi}{HTML}{127A87}
+\definecolor{Language_delay_delayed_or_abnormal_babbling_color_other}{HTML}{127A87}
+\definecolor{Delayed_or_absent_response_to_his_her_own_name_color_indi}{HTML}{95C3C9}
+\definecolor{Delayed_or_absent_response_to_his_her_own_name_color_other}{HTML}{95C3C9}
+\definecolor{Poor_eye_contact__ever__color_indi}{HTML}{FFFFFF}
+\definecolor{Poor_eye_contact__ever__color_other}{HTML}{CBE2E4}
+\definecolor{Sensory_processing_disorder__ever__color_indi}{HTML}{77B2B9}
+\definecolor{Sensory_processing_disorder__ever__color_other}{HTML}{77B2B9}
+\definecolor{Unusual_response_to_taste__e_g__higher_or_lower_response_to_stimuli_than_would_be_expected__or_a_lack_of_discrimination__color_indi}{HTML}{DBEAEC}
+\definecolor{Unusual_response_to_taste__e_g__higher_or_lower_response_to_stimuli_than_would_be_expected__or_a_lack_of_discrimination__color_other}{HTML}{DBEAEC}
+\definecolor{Unusual_response_to_sounds__e_g__startle_response_to_sounds_or_lack_of_response_to_sounds__color_indi}{HTML}{AACFD3}
+\definecolor{Unusual_response_to_sounds__e_g__startle_response_to_sounds_or_lack_of_response_to_sounds__color_other}{HTML}{AACFD3}
+\definecolor{Unusual_response_to_touch__e_g__higher_or_lower_pain_tolerance__color_indi}{HTML}{FFFFFF}
+\definecolor{Unusual_response_to_touch__e_g__higher_or_lower_pain_tolerance__color_other}{HTML}{C6DFE2}
+\definecolor{Loss_of_speech_skills__e_g__speech_regression__color_indi}{HTML}{FFFFFF}
+\definecolor{Loss_of_speech_skills__e_g__speech_regression__color_other}{HTML}{E2EFF0}
+\definecolor{Loss_of_motor_skills__e_g__motor_regression__color_indi}{HTML}{FFFFFF}
+\definecolor{Loss_of_motor_skills__e_g__motor_regression__color_other}{HTML}{E0EDEF}
+\definecolor{Loss_of_social_skills__e_g__social_regression__color_indi}{HTML}{FFFFFF}
+\definecolor{Loss_of_social_skills__e_g__social_regression__color_other}{HTML}{E5F0F1}
+\definecolor{Stopped_progressing_in_skills_development_halted_color_indi}{HTML}{AACFD3}
+\definecolor{Stopped_progressing_in_skills_development_halted_color_other}{HTML}{AACFD3}
+\definecolor{Constipation_color_indi}{HTML}{FFFFFF}
+\definecolor{Constipation_color_other}{HTML}{74B1B8}
+\definecolor{GE_reflux_color_indi}{HTML}{FFFFFF}
+\definecolor{GE_reflux_color_other}{HTML}{B7D6DA}
+
+\newpage
+
+\begin{center}
+\LARGE \textbf{8p Hero Passport}
+\end{center}
+
+\vspace{\baselineskip}
+
+\subsubsection{Name:}\label{name}
+
+\vspace{\baselineskip}
+
+\subsubsection{Date of birth:}\label{date-of-birth}
+
+\vspace{\baselineskip}
+
+\subsubsection{Sex: Female}\label{sex-female}
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+\section*{Genetic Diagnosis}
+
+\begin{flushleft}
+\textbf{Date of testing:} NA\linebreak
+\textbf{Test type:} Other\linebreak
+\textbf{Genetic finding:} Chromosome 8p inverted duplication deletion (8p deletion: 8p23.3 (158,048) to 8p23.1 (6,999,114); 8p duplication: 8p23.1 (11,935,023) to 8p11.1 (43,786,723))\linebreak
+\textbf{Duplication size:} 31,851,700 BP. Median size among other 8p heroes: 24,194,174 BP.\linebreak
+\textbf{Deletion size:} 6,841,066 BP. Median size among other 8p heroes: 6,837,807 BP.\linebreak
+\textbf{Inheritance:} Parental testing not done
+\end{flushleft}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+\includegraphics[width=1\linewidth]{Input/Images/8p_invdupdel} \newline
+\includegraphics{Output/Patient_passport_61_files/figure-latex/Custom chromsome variant-1.pdf}
+\newpage
+
+\section*{Family Genetic Testing Recommendation}
+\begin{spacing}{1.15} 
+Given the genetic nature of chromosome 8p disorders, we recommend that family members consider genetic testing to better understand potential hereditary patterns. Family genetic testing can provide valuable insights into the unique genetic makeup of each family member, helping clinicians tailor care more effectively and enabling families to make informed decisions about health and wellness.
+
+\section*{How you can connect with my 8p Hero}
+\begin{spacing}{1.15} 
+When interacting with my 8p Hero, it’s important to approach with warmth, patience, and respect. Here are a few ways you can create a meaningful connection:
+\begin{enumerate}
+    \item \textbf{Start with a greeting:} Say hello clearly and make eye contact when possible. Using my Hero’s name helps them recognize your friendly intent.
+    \item \textbf{Pause for a response:} After asking a question or giving an instruction, wait for at least 3 seconds. My Hero may need extra time to process and respond, which could be in the form of a gesture, a nod, or even an eye blink.
+    \item \textbf{Use open body language:} Keep your gestures expressive and welcoming. A warm demeanor often encourages my Hero to feel comfortable in your presence.
+    \item \textbf{Respect personal space but be open to connection:} If my Hero shows interest in a hug or physical touch, depending on your comfort level, it’s okay to offer a hand or a gentle hug.
+     \item \textbf{Other ways to connect to my 8p hero:} 
+\end{enumerate}
+\end{spacing}
+
+\section*{Chromosome 8p Disorder Summary}
+\begin{spacing}{1.15} 
+Chromosome 8p disorder is a rare genetic condition that is known to affect 550 individuals worldwide, but has a reported prevalence of 1:10,000 - 1:30,000. Chromosome 8p disorder is caused when there is a rearrangement of genetic information before birth, on the short arm (the p arm) of the 8th chromosome. This genetic rearrangement can be the deletion of information, duplication of information, or inverted duplication and deletion (invdupdel). Chromosome 8p disorder has systemic effects, meaning it impacts cells and tissues throughout the body, rather than being confined to a single organ. The chromosomal rearrangement typically arises from spontaneous (de novo) changes early during embryonic development, for reasons that remain unclear. The severity and specific features of 8p disorders can vary significantly based on the amount of genetic information that has changed in addition to other factors that we are still working to understand. 
+\newline
+\newline
+There are several types of therapies that can be effective for children with 8p disorders, depending on their symptoms, these include speech therapy, occupational therapy, physical therapy, vision therapy, ABA therapy, aquatic therapy, feeding therapy, hippotherapy as well as assistive and augmentative communication devices. In the absence of treatments for chromosome 8p disorders, clinicians at Project 8p’s multi-disciplinary clinic recommend treating symptoms with standard clinical practice as they arise.
+\newline
+\newline
+\textbf{Unfortunately, no targeted therapies for chromosome 8p disorders exist yet. As such, current treatment focuses on managing symptoms as they appear and implementing 8p standards of care. Project 8p is dedicated to accelerating treatments for tomorrow.} We can facilitate collaboration with our clinical experts to support your care plan and offer tailored resources. For further assistance, contact our clinical team at engagement@project8p.org.
+\end{spacing}
+
+
+\end{spacing}
+
+\newpage
+\section*{Current Medication \& Supplement Information}
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.5} % Adjust the value as needed
+\begin{NiceTabular}{|X|c|c|}[hvlines, color-inside]
+\hline
+\rowcolor{color1}%
+\textbf{Medication} & \textbf{Frequency} & \textbf{Dosage} \\
+cetirizine & PRN & generic/7.5-10ml \\ \hline
+Magnesium sulfate & daily & variable-1/8 tsp \\ \hline
+Custom formulated CBD/THC/THCA oils & a.m./bedtime/PRN-see notes & n/a - see notes \\ \hline  
+\hline
+\rowcolor{color1}%
+\textbf{Supplement} & \textbf{Frequency} & \textbf{Dosage} \\
+benefiber & daily & variable/1tsp \\ \hline
+GBX Superfood & daily & Amare \\ \hline
+Kate Farms Pediatric Peptide Vanilla & 4xdaily & 1 canister \\ \hline
+\hline
+\end{NiceTabular}
+\vspace{-1em} 
+\parbox{\linewidth}{\raggedright\textit{Prior medications can be obtained from the Appendix.}}
+\end{table}
+
+\newpage
+\section*{Prenatal and Birth History}
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.5} % Adjust the value as needed
+\begin{NiceTabular}{|X|c|c|}[hvlines, color-inside]
+\hline
+\rowcolor{color1}%
+\textbf{General information} & \textbf{Your 8p Hero} & \makecell{\textbf{Other 8p Heroes with} \\ \textbf{8p inverted duplication/deletion} \\  \textbf{median (25-75\% quantiles)}} \\
+\hline
+Weight & \makecell{Unknown\\} & - \\
+\hline
+Length & \makecell{45 cm \\ 17.7 inch} & \makecell{48.3 cm (47 cm - 51.4 cm)\\19 inch (18.5 inch - 20.2 inch)} \\
+\hline
+Head Circumference & Survey incomplete & \makecell{33 cm (31.8 cm - 34.1 cm)\\13 inch (12.5 inch - 13.4 inch)} \\
+\hline
+Gestational & 32 - 36 weeks & - \\
+\hline
+\rowcolor{color1}%
+\textbf{Prenatal \& birth complications} & & \\
+\hline
+NICU Admission & Yes & 53.3\% \\
+\hline
+NICU Reason & \makecell{Breathing Difficulties} & - \\
+\hline
+Days at the Hospital following NICU Admission & 2 & 4 (2 - 10.75) \\
+\hline
+\end{NiceTabular}
+\end{table}
+
+\section*{ Developmental Milestones}
+
+\includegraphics{Output/Patient_passport_61_files/figure-latex/Milestone 1-1.pdf}
+
+\parbox{\linewidth}{\raggedright\textit{*For developmental milestones achieved, the 8p hero comparison shown is the percentage of 8p heroes that have achieved that milestone by the same age as your 8p hero. If the age when the 8p hero achieved the milestone is known it is indicated by a star.}}
+
+\newpage
+\section*{How to interpret symptom frequency plots}
+
+\includegraphics[width=1\linewidth]{Input/Images/Plot_guide_invdupdel}
+
+The age of assessment of the 8 hero was 6 year(s) and 5 month(s). Please
+note that the comparison group includes all 8p heroes with 8p inverted
+duplication/deletions. Be aware that some 8p heroes may not display a
+clinical characteristic at the time of assessment but might develop it
+later. The fraction of 8p heroes with a clinical characteristic might
+thus be underreported. \vspace{\baselineskip}
+
+\section*{Physical Health}
+
+\includegraphics{Output/Patient_passport_61_files/figure-latex/plot physical health-1.pdf}
+\newline
+
+\includegraphics[width=1\linewidth]{Input/Images/symtom_legend_invdupdel}
+\newline
+
+\includegraphics[width=0.7\linewidth]{Output/Patient_passport_61_files/figure-latex/plot physical health2-1}
+
+\includegraphics[width=1\linewidth]{Input/Images/symtom_legend_invdupdel}
+
+\section*{Behavioral and Cognitive Development}
+
+\includegraphics{Output/Patient_passport_61_files/figure-latex/plot behaviour-1.pdf}
+\newline
+
+\includegraphics[width=1\linewidth]{Input/Images/symtom_legend_invdupdel}
+
+\includegraphics[width=0.95\linewidth]{Output/Patient_passport_61_files/figure-latex/plot behaviour2-1}
+\newline
+
+\includegraphics[width=1\linewidth]{Input/Images/symtom_legend_invdupdel}
+
+\begin{flushleft}\includegraphics[width=0.7\linewidth]{Output/Patient_passport_61_files/figure-latex/plot behaviour3-1} \end{flushleft}
+
+\includegraphics[width=1\linewidth]{Input/Images/symtom_legend_invdupdel}
+
+\newpage 
+\section*{Gastrointestinal Health}
+
+\begin{flushleft}\includegraphics[width=0.6\linewidth]{Output/Patient_passport_61_files/figure-latex/plot GI-1} \end{flushleft}
+\vspace{\baselineskip}
+
+\includegraphics[width=1\linewidth]{Input/Images/symtom_legend_invdupdel}
+
+The following Gastrointestinal health symptoms have been documented in
+the 8p population but we have insufficient data to provide prevalence
+estimates at this time: Diarrhea, jaundice, abdominal pain, enlarged
+liver, malabsorption, liver function abnormalities, gallbladder disease,
+vomiting, cyclic vomiting, inflammatory bowel disease, colic
+\vspace{\baselineskip}
+
+\begin{center}
+\textcolor[HTML]{01707E}{
+If you have any questions about any of the information provided in this 8p Hero Passport, or would like to update any of your 8p hero's information, please contact us at engagement@project8p.org. \\
+\vspace{\baselineskip}
+Visit the 8p Patient Navigator for care guidelines and recommendations: https://project8p.org/.
+}
+\end{center}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+\begin{spacing}{1.15} 
+\href{https://project8p.org/join-the-cause/}{\textcolor[HTML]{6567AF}{\textbf{Join the cause! (Find more details here: https://project8p.org/join-the-cause/)}}} \\[1em]
+Project 8p Foundation is a registered 501(c)(3) charitable organization with EIN 83-2545342. \linebreak 
+All contributions are deemed tax-deductible. \\[1em]
+\textbf{Contact Information} \\[0.5em]
+info@project8p.org \\[0.5em]
+Project 8p Foundation, 787 Seventh Avenue – 31st Floor, New York, NY 10019 \\[0.5em]
+\end{spacing}
+
+\newpage 
+\section*{Appendix}
+
+\section*{Prior medication and supplements not continued}
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.5} % Adjust the value as needed
+\begin{NiceTabular}{|X|c|c|c|}[hvlines, color-inside]
+\hline
+\rowcolor{color1}%
+\textbf{Medication} & \textbf{Frequency} & \textbf{Dosage} & \textbf{Stop Reason}\\
+None reported & NA & NA & NA \\ \hline  
+\hline
+\rowcolor{color1}%
+\textbf{Supplement} & \textbf{Frequency} & \textbf{Dosage} & \textbf{Stop Reason}\\
+See notes & n/a & \makecell{n/a} & \makecell{See notes} \\ \hline
+\hline
+\end{NiceTabular}
+\vspace{-1em} 
+\end{table}
+
+\end{document}
