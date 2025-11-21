@@ -42,7 +42,7 @@ header-includes:
   - \addtolength{\topmargin}{-30.98643pt}
   - \pagestyle{fancy}
   - \setstretch{1.5}
-  - \fancyhead[R]{\includegraphics[width=4.0cm]{logo.png}}
+  - \fancyhead[R]{\includegraphics[width=4.0cm]{Input/Images/logo.png}}
   - \setlength{\footskip}{0.5cm}
 
 ---
